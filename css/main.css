@@ -53,7 +53,6 @@ body {
 .hero {
     /* display: flex; */
     color: #F9FAF8;
-    /* background-color: cornflowerblue; */
     background: url("/images/serious.jpg");
     background-size: cover;
     align-items: center;
@@ -194,13 +193,13 @@ button:hover {
 .quote {
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
+    background-color: #1F2937;
     padding: 0 200px;
 }
 
 .quote p {
     font-size: 30px;
-    color: black;
+    color: #E5E7EB;
     font-style: italic;
     font-weight: lighter;
     font-family: 'Roboto', arial;
@@ -211,21 +210,22 @@ button:hover {
     padding-right: 10px;
     font-family: 'Roboto', arial;
     text-align: right;
+    color: #E5E7EB;
 }
 
 /* Sign Up Part */
 .sign-up {
     background-color: #3882F6 ;
-    margin: 50px 200px;
-    padding: 10px 80px;
+    /* margin: 50px 200px; */
+    padding: 5px 400px;
     display: flex;
     align-items: center;
-    border-radius: 5px;
-    border-color: none;
+    /* border-radius: 5px; */
+    /* border-color: none; */
 }
 
-.sign-item {
-    flex: 1;
+#keep {
+    float: left;
 }
 
 .signs-text {
@@ -255,10 +255,117 @@ h3 {
     font-size: 15px;
 }
 
+/* For Shopping Page */
+.content-div {
+    /* background: url("/images/Dog2.jpg"); */
+    background-color: seagreen;
+}
+
+.content-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.dog-card {
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(187, 255, 0, 0.452);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #e8491d9c;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.dog-card h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.dog-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.dog-card button {
+    background-color: #e8491d9c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dog-card button:hover {
+    background-color: #e8491d;
+}
+
 /* Footer */
 
 .footer {
-    background-color: #1F2937;
+    background-color: #e8491d9c;
     color: #fff;
     font-family: 'Roboto', arial;
+    padding: 5px;
 }
+
+/* Add this to your existing CSS */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    padding-right: 50px;
+    background-color: seagreen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #e8491d9c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8491d;
+}
+
